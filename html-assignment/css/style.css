@@ -22,3 +22,34 @@ ul {
 ul:nth-child(odd) {
     background-image: linear-gradient(to right, #fbfada, rgb(73, 117, 51));
 }
+
+/* a normal, unvisited link*/
+a:link {
+    text-decoration: none;
+    background-color: hotpink;
+    color: purple;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* a visited link*/
+a:visited {
+    text-decoration: none;
+    background-color: rgb(198, 35, 149);
+    border-color: rgb(251, 255, 0);
+}
+
+/* when the mouse is over the link*/
+a:hover {
+    text-decoration: none;
+    background-color: rgb(36, 98, 26);
+    border-color: rgb(251, 255, 0);
+}
+
+/* a selected link*/
+a:active {
+    text-decoration: none;
+    background-color: rgb(231, 138, 45);
+    border-color: rgb(0, 60, 255);
+}
