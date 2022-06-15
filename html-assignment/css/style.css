@@ -3,6 +3,6 @@ body {
     font-size: 18px;
 }
 
-header, footer {
+header, h1, footer {
 background-color: orange;
 }
