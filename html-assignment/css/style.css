@@ -11,6 +11,11 @@ background-color: orange;
     color: white;
 }
 
+#my-image {
+    box-shadow: 0 0 2px 1px #000000
+}
+
 ul {
     list-style: square;
 }
+
