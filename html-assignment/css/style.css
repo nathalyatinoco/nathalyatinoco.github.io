@@ -20,5 +20,5 @@ ul {
 }
 
 ul:nth-child(odd) {
-    background-image: linear-gradient(to right, #FFFFFF, rgb(73, 117, 51));
+    background-image: linear-gradient(to right, #fbfada, rgb(73, 117, 51));
 }
