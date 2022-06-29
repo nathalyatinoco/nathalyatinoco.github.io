@@ -2,3 +2,21 @@
 .facts {
     list-style-type: none;
 }
+
+/* Add backgroound color to the web */
+body {
+    background-color: #A9D3CE;
+
+    body{
+        background-image: ;
+        background-position: 55% 55%;
+        background-size: cover;
+        margin: 0;
+      }
+      
+      header{
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        background: rgba(0,0,0,0.5);
+        color: #fff
