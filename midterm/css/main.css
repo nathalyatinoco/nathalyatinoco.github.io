@@ -3,10 +3,11 @@
     list-style-type: none;
 }
 
-/* Add backgroound color to the web */
+/* Add backgroound color to the web and change font style */
 body {
     background-color: #A9D3CE;
-
+    font-family: Arial, Helvetica, sans-serif
+}
     body{
         background-image: ;
         background-position: 55% 55%;
