@@ -4,45 +4,66 @@
     margin: auto;
 }
 
-/* removes bullet point from list of facts */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-nav li {
-    display: inline;
-    width: 100px;
+
+header {
+    padding: 125px;
+    background-image: url(../images/lone-starfish-wide.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto;
     text-align: center;
-    border-right:1px solid black;
-}
+    font-size: 65px;
+    color: #fff
+    
+  }
 
-nav li a {
+  /* The navbar container */
+  .wrapper {
+      overflow: hidden;
+      background-color: #D5E8E6;
+  }
+
+  /* Remove default bullets*/
+  nav ul li{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  /* Add a black right border to all list items, except the last item (last-child) */
+.wrapper a {
+      border-right: 1px solid black;
+  }
+.wrapper a: last-child {
+      border-right: none;
+  }
+
+/* Navbar links and style */
+.wrapper a {
+    float: left;
     display: inline-block;
-    padding: 8px;
     background-color: #D5E8E6;
+    text-align: center;
+    padding: 20px 19px;
+    text-decoration: none;
 }
 
-/* Add backgroound color to the web and change font style */
+
+/* Add backgroound color to the web and change the font */
 body {
     background-color: #A9D3CE;
     font-family: Arial, Helvetica, sans-serif
 }
-    body{
-        background-image: ;
-        background-position: 55% 55%;
-        background-size: cover;
-        margin: 0;
-      }
+    
+main {
+    background-color: #D5E8E6;
+    width: 920px;
+    padding: 50px;
+    margin: auto;
+
+    text-align: left;
+}
       
-      header {
-        padding: 20px;
-        text-align: center;
-        text-transform: uppercase;
-        background: rgba(0,0,0,0.5);
-        color: #fff
-      }
 
       input[type=text] {
         width: 100%;
@@ -63,4 +84,12 @@ body {
         padding: 60px 20px;
         margin: 8px 0px;
         box-sizing: border-box;
+      }
+
+      footer {
+        background-color: #D5E8E6;
+        text-align: right;
+        width: 920px;
+        padding: 50px;
+        margin: auto;
       }
