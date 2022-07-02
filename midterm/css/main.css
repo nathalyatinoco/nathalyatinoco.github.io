@@ -119,19 +119,20 @@ img {
 
       input[type=textarea] {
         width: 100%;
-        padding: 60px 20px;
-        margin: 8px 0px;
+        padding: 12px 20px;
+        margin-top: 6px;
+        margin-bottom: 5px;
+        height: 120px;
         box-sizing: border-box;
+        
       }
 
       .radio {
-        padding-top: 8px;
-        float: right;
+        float: left;
         text-align: right;
-        display: block;
       }
       
-      /* change submision buttom size */ 
+      /* Change submision buttom size */ 
       input[type=submit] {
         width: 8%;
         padding: 12px 8px;
@@ -139,10 +140,21 @@ img {
         background-color: #D5E8E6;
       }
 
-       /* change submision buttom position */  
+       /* Change submision buttom position */  
       input[type=submit] {
       float:left;
+      position:relative;
+      left: -160px;
+      top: 35px;
+      
       }
+
+      /* Change Fieldset size */  
+      fieldset {
+        padding: 45px 15px;
+
+      }
+    
 
         /* change the background and resize the footer */ 
       footer {
