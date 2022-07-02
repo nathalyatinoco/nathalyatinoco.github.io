@@ -1,10 +1,4 @@
 
-.wrapper {
-    max-width: 300px;
-    margin: auto;
-}
-
-
 header {
     padding: 125px;
     background-image: url(../images/lone-starfish-wide.jpg);
@@ -18,35 +12,65 @@ header {
   }
 
   /* The navbar container */
-  .wrapper {
-      overflow: hidden;
-      background-color: #D5E8E6;
+  .topnav {
+    width: 100%;  
+    max-width: 920px;
+    margin: auto;
+    
   }
 
-  /* Remove default bullets*/
-  nav ul li{
+  /* Remove default bullets and create horizontal nav bar*/
+  nav {
       list-style-type: none;
-      margin: 0;
-      padding: 0;
+      position: absolute;
+      top: 305px;
+      left: 30px;
+      width: 100%;
+      z-index: 1;
   }
+
+  /* Add style to the nav bar*/
+    nav a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: normal;
+        letter-spacing: normal;
+        color: black
+    }
+
+  /* Add structural style to the nav bar*/
+    nav {
+        width: 100%;
+        margin: 25px 0;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+    display: inline-block;
+    width: 20%;
+    float: left;
+    }
+    
+    nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-left:100%;
+    }
 
   /* Add a black right border to all list items, except the last item (last-child) */
-.wrapper a {
+  nav ul li {
       border-right: 1px solid black;
   }
-.wrapper a: last-child {
+  nav ul li a: last-child {
       border-right: none;
   }
-
-/* Navbar links and style */
-.wrapper a {
-    float: left;
-    display: inline-block;
-    background-color: #D5E8E6;
-    text-align: center;
-    padding: 20px 19px;
-    text-decoration: none;
-}
 
 
 /* Add backgroound color to the web and change the font */
@@ -54,16 +78,27 @@ body {
     background-color: #A9D3CE;
     font-family: Arial, Helvetica, sans-serif
 }
-    
+
+
+  /* Add sizes and color palettet */  
 main {
     background-color: #D5E8E6;
+    color: black;
     width: 920px;
     padding: 50px;
     margin: auto;
-
     text-align: left;
 }
-      
+
+
+  /* Add sizes and position to an image */  
+img {
+    float: left;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
 
       input[type=text] {
         width: 100%;
