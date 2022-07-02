@@ -1,14 +1,15 @@
 
 header {
     padding: 125px;
+    margin: auto;
+    width:auto;
     background-image: url(../images/lone-starfish-wide.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: auto;
     text-align: center;
-    font-size: 65px;
-    color: #fff
-    
+    font-size: 60px;
+    color: #fff;
   }
 
   /* The navbar container */
@@ -16,20 +17,19 @@ header {
     width: 100%;  
     max-width: 920px;
     margin: auto;
-    
   }
 
   /* Remove default bullets and create horizontal nav bar*/
   nav {
       list-style-type: none;
+      float: left;
       position: absolute;
-      top: 305px;
-      left: 30px;
-      width: 100%;
-      z-index: 1;
+      top: 325px;
+      left: 0;
+      right: 0;
   }
 
-  /* Add style to the nav bar*/
+  /* Change font style*/
     nav a {
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
@@ -38,13 +38,17 @@ header {
         font-weight: normal;
         text-transform: normal;
         letter-spacing: normal;
+        text-align: center;
         color: black
     }
 
   /* Add structural style to the nav bar*/
     nav {
-        width: 100%;
-        margin: 25px 0;
+        min-width: 920px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 14px 400px;
     }
 
     nav ul {
@@ -53,14 +57,13 @@ header {
 
     nav ul li {
     display: inline-block;
-    width: 20%;
-    float: left;
+    width: 250px;
+    margin-left: 30px;
     }
     
     nav ul li a {
-        display: block;
-        width: 100%;
-        text-align: center;
+        display: inline-block;
+        width: 120%;
         margin-left:100%;
     }
 
@@ -121,10 +124,33 @@ img {
         box-sizing: border-box;
       }
 
+      .radio {
+        padding-top: 8px;
+        float: right;
+        text-align: right;
+        display: block;
+      }
+      
+      /* change submision buttom size */ 
+      input[type=submit] {
+        width: 8%;
+        padding: 12px 8px;
+        margin: auto;
+        background-color: #D5E8E6;
+      }
+
+       /* change submision buttom position */  
+      input[type=submit] {
+      float:left;
+      }
+
+        /* change the background and resize the footer */ 
       footer {
         background-color: #D5E8E6;
         text-align: right;
         width: 920px;
         padding: 50px;
-        margin: auto;
+        margin: -3em auto 0em;
       }
+
+    

@@ -14,7 +14,7 @@
     <main>
 
           <!-- creates a wrapper to limit width and center content-->
-    <div class="wrapper">
+    <div class="topnav" id="myTopnav">
         <nav>
             <ul>
                 <li><a href="#home">HOME</a></li>
@@ -31,7 +31,7 @@
 
         Pellentesque metus quam, sodales ultricies sagittis et, tincidunt et dolor. Sed a nunc eget leo faucibus elementum sit amet ultricies leo. Maecenas id tristique metus, a lobortis mauris. Donec sodales luctus justo eget sagittis. Donec in dapibus augue, sit amet laoreet urna. Vivamus sapien purus, placerat nec elit sed, gravida bibendum augue. Sed et ornare nisl, in auctor orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec lectus lacus, dignissim vitae pharetra eget, sagittis placerat orci. Ut sollicitudin risus eu arcu luctus posuere. Donec mauris odio, fringilla quis ultrices rhoncus, efficitur eu lacus. Proin enim orci, laoreet vel quam ut, auctor porta odio.
                 
-        Pellentesque eget bibendum leo. In at diam porttitor, posuere lectus sed, fringilla justo. Vestibulum aliquet eget magna id scelerisque. Sed ultricies et nisi ut elementum. Etiam sed urna justo. Praesent accumsan posuere magna et pharetra. Nulla semper lacinia lectus eget gravida. Curabitur efficitur malesuada mi, at pretium erat convallis eget</p>
+        Pellentesque eget bibendum leo. In at diam porttitor, posuere lectus sed, fringilla justo.</p>
 
             <h2>
                 Facts About Starfish
@@ -62,14 +62,24 @@
 
                 <form action="Contact.html" method="post">
                     <label for="message">Your Message</label>
-                    <input id="message" type="textarea">
+                    <input id="message" type="text">
                 </form>
 
                  <h5>Would you like to visit the starfish?</h5>
-                <input type="radio" name="radio-answer" value="yes">Yes
-                <input type="radio" name="radio-answer" value="no">No
-                <input type="radio" name="radio-answer" value="other">Maybe
-                 <input type="submit" value="SEND">
+                 <label class="radio">
+                    <input type="radio" name="radio-answer" value="yes">Yes
+                 </label>
+
+                 <label class="radio">
+                    <input type="radio" name="radio-answer" value="no">No
+                 </label>
+
+                 <label class="radio">
+                    <input type="radio" name="radio-answer" value="other">Maybe
+                 </label>
+
+                     <input type="submit" value="SEND">
+            
                 </fieldset>
 
     </main>
