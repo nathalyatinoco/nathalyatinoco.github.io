@@ -16,8 +16,8 @@ header {
 /* The navbar container */
   .topnav {
     width: 100%;  
-    max-width: 920px;
-    margin: auto;
+    background-color: #D5E8E6;
+    overflow: auto;
   }
 
 /* Remove default bullets and create horizontal nav bar*/
@@ -44,12 +44,10 @@ header {
     }
 
 /* Add structural style to the nav bar*/
-    nav {
-        min-width: 920px;
-        max-width: 100%;
-        margin-left: 15%;
-        margin-right: 0;
-        padding: 0px 0px;
+    nav a {
+        width: 33%;
+        padding: 14px 16px;
+        
     }
 
     nav ul {
@@ -58,8 +56,9 @@ header {
 
     nav ul li {
     display: inline-block;
-    width: 250px;
-    margin-left: 30px;
+    width: 300px;
+    margin-left: 5%;
+    margin-right: 0%;
     }
     
     nav ul li a {
@@ -68,12 +67,13 @@ header {
         margin-left:100%;
     }
 
-/* Add a black right border to all list items, except the last item (last-child) */
-  nav ul li {
+/* Add a black right border to all list items, except the last item first-child) */
+  nav ul li a {
       border-right: 1px solid black;
   }
-  nav ul li a last-child {
+  nav ul li a first-child :last-child {
       border-right: none;
+
     }
 
 
