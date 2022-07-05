@@ -47,9 +47,9 @@ header {
     nav {
         min-width: 920px;
         max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 14px 400px;
+        margin-left: 15%;
+        margin-right: 0;
+        padding: 0px 0px;
     }
 
     nav ul {
