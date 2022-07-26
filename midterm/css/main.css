@@ -1,33 +1,29 @@
 /* Add structural style to header*/
 header {
-    padding: 125px;
-    margin: auto;
-    width:auto;
-    background-image: url(../images/lone-starfish-wide.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: auto;
+    position: relative;
     text-align: center;
     font-size: 60px;
     color: #fff;
+    height: 341px;
   }
 
+  header h1 {
+    position: absolute;
+  }
+
+  .wrapper {
+    margin: auto;
+    width: 920px;
+
+  }
 /* The navbar container */
-  .topnav {
+  /* .topnav {
     width: 100%;  
     max-width: 920px;
     margin: auto;
-  }
+  } */
 
 /* Remove default bullets and create horizontal nav bar*/
-  nav {
-      list-style-type: none;
-      float: left;
-      position: absolute;
-      top: 325px;
-      left: 0;
-      right: 0;
-  }
 
 /* Change font style*/
     nav a {
@@ -44,34 +40,26 @@ header {
 
 /* Add structural style to the nav bar*/
     nav {
-        min-width: 920px;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 14px 400px;
+       
     }
 
     nav ul {
         width: 100%;
+        padding-left: 0;
     }
 
     nav ul li {
     display: inline-block;
-    width: 250px;
-    margin-left: 30px;
+    width: 30%;
+    text-align: center;
     }
-    
-    nav ul li a {
-        display: inline-block;
-        width: 120%;
-        margin-left:100%;
-    }
+  
 
 /* Add a black right border to all list items, except the last item (last-child) */
   nav ul li {
       border-right: 1px solid black;
   }
-  nav ul li a last-child {
+  nav ul li:last-child {
       border-right: none;
     }
 
@@ -95,7 +83,7 @@ main {
 
 
 /* Add sizes and position to an image */  
-img {
+main img {
     float: left;
     padding: 10px;
     width: 250px;
