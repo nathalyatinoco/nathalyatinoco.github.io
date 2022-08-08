@@ -7,9 +7,9 @@
     <title>MTM6130 Final - Tinoco</title>
 
  <!-- Google Fonts code -->
- <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
  <!-- FontAwesome code-->
  <script src="https://kit.fontawesome.com/820839ab98.js" crossorigin="anonymous"></script>
@@ -18,126 +18,107 @@
  <link rel="stylesheet" href="css/main.css">
  
 </head>
+
 <body>
-    <header>
-        <!--Add a Navigation Bar-->
-        <div class="topnav">
-            <div>
-                <a class="navbar-logo" href="/">
-                    <div class="logo-image">
-                        <img id="logo" src="images/logo.png" alt="logo">
-                    </div>
-                </a>
-            </div>
-            <nav>
-                <a class="active" href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Services</a>
-                <a href="#">Team</a>
-                <a href="#">Contact</a>
+<!--Creates the nav section using a unordered list-->
+    <div class="header">
+        <nav>
+            <div class="topnav">
+                <img src="images/logo.png" alt="logo"/>
+                    <ul>
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                <!--Creates the search container usingn a form-->
                 <div class="search-container">
                     <form action="/action_page.php">
                         <input type="text" placeholder="=Search" name="search">
-                        <buttom type="submit"> <i class="search-container"></i></buttom>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </form>
                 </div>
-            </nav>
-        </div>
-        <!--Creates banner content-->
+            </div>
+        </nav>
+
+<!--Creates the welcome banner with link buttom-->
         <div class="intro-banner">
-            <div>
-                <img id="banner" src="images/main-banner.jpg" alt="intro-banner">
+            <div class="intro-text">
                 <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quos facilis reiciendis voluptas error numquam doloribus nobis neque, et exercitationem saepe ipsum delectus veritatis possimus ad, blanditiis repellendus explicabo! Quam.</p>
-    
-                <p><a href="https://www.luxurycards.shop/">Connect with us <i class="fa-solid fa-caret-right"></i></a></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quos facilis reiciendis voluptas error numquam doloribus nobis neque.</p>
+                    <!--Connect to a link-->
+                    <a href="" class="boton">Connect with us</a><i class="fa-solid fa-caret-right"></i>
             </div>
         </div>
+    </div>
 
-    </header>
 
     <main>
-        <!--Creates "About Us" category-->
-        <div class="about-us">
+<!--Creates "About Us" section, attaching an image, a heading, and two paragraphs-->
+        <section class="about-us">
+            <img id="about-us" src="images/about-us.jpg" alt="About Us">
             <h2>About Us</h2>
-                <img id="about-us" src="images/about-us.jpg" alt="About Us">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus, ex ut doloremque atque nostrum ullam quidem iusto sapiente vitae ab dolore!
-
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum eius eum quis, eveniet assumenda reiciendis inventore vero eligendi et aspernatur fugit, fugiat voluptas.
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus, ex ut doloremque atque nostrum ullam quidem iusto sapiente vitae ab dolore! <br> <!--The Line Break element allows to separe the paragraphs-->Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum eius eum quis, eveniet assumenda reiciendis inventore vero eligendi et aspernatur fugit, fugiat voluptas.
             </p>
-        </div>
-        
-        <!--Creates "Our Services" category and content-->
-        <div class="our-services">
+        </section>
+
+    
+<!--Creates "Our Services" section with multiples div inside with an image, a heading, a paragraph and a link to connect a page-->
+        <section class="our-services">
             <h2>Our Services</h2>
             <div class="digital-transformation">
                 <img id="digital-transformation" src="images/digital.jpg" alt="Digital Transformation">
                 <h3>Digital Transformation</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.
-                </p>
-                <p><a href="https://www.luxurycards.shop/">Digital Plans <i class="fa-solid fa-caret-right"></i></a></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
+                <a href="">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
             
             <div class="marketing">
                 <img id="marketing" src="images/marketing.jpg" alt="Marketing">
                 <h3>Marketing</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.
-                </p>
-                <p><a href="https://www.luxurycards.shop/">Marketing Plans <i class="fa-solid fa-caret-right"></i></a></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
+                <a href="">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
 
             <div class="video">
                 <img id="video-production" src="images/video.jpg" alt="Video Production">
                 <h3>Video Production</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.
-                </p>
-                <p><a href="https://www.luxurycards.shop/">Video Plans <i class="fa-solid fa-caret-right"></i></a></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
+                <a href="">Video Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
 
             <div class="web">
                 <img id="web-development" src="images/web.jpg" alt="Web Development">
                 <h3>Web Development</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.
-                </p>
-                <p><a href="https://www.luxurycards.shop/">Web Plans <i class="fa-solid fa-caret-right"></i></a></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
+                <a href="">Web Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
 
             <div class="print">
                 <img id="print" src="images/print.jpg" alt="Print">
                 <h3>Print</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.
-                </p>
-                <p><a href="https://www.luxurycards.shop/">Print Plans <i class="fa-solid fa-caret-right"></i></a></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
+                <a href="">Print Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
-        </div>
+        </section>
 
-        <!--Creates "Our vision" category-->
+<!--Creates "Our vision" using a div to display a background image and a paragraph with a link buttom-->
         <div class="our-vision">
             <img id="our-vision" src="images/vision.jpg" alt="our-vision">
                 <h3>Our Vision</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.
-                </p>
-                <p><a href="https://www.luxurycards.shop/">Learn More <i class="fa-solid fa-caret-right"></i></a></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
+                <a href="/">Learn More <i class="fa-solid fa-caret-right"></i></a>
         </div>
 
-        <!--Creates "Our Team" category and content-->
-        <div class="our-team">
+<!--Creates "Our Team" section with a class for each member with an image, two headings that defines the most important content, and a paragraph for the bio. -->
+        <section class="our-team">
             <h2>Our Team</h2>
             <div class="john-doe">
                 <img id="john-doe" src="images/john.jpg" alt="John Doe">
                 <h3>John Doe</h3>
                 <h5>CEO and Co-owner</h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore animi doloremque veritatis asperiores quae repellat nobis, sed voluptatum ab possimus placeat facere consequuntur, amet a nostrum ex explicabo, maxime magnam.
-                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore animi doloremque veritatis asperiores quae repellat nobis, sed voluptatum ab possimus placeat facere consequuntur, amet a nostrum ex explicabo, maxime magnam.</p>
             </div>
 
             <div class="bob-rite">
@@ -148,10 +129,11 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore animi doloremque veritatis asperiores quae repellat nobis, sed voluptatum ab possimus placeat facere consequuntur, amet a nostrum ex explicabo, maxime magnam.
                 </p>
             </div>
-        </div>
+        </section>
+    </main>
 
-        <!--Creates "Contact Us" category, contact form, embedded map, and schedule table-->
-        <div class="contact-us">
+<!--Creates "Contact Us" section, using a form with three input fields and one submit button-->
+        <section class="contact-us">
             <h2>Contact Us</h2>
             <div class="send-us-a-message">
                 <h3>Send us a message</h3>
@@ -173,38 +155,39 @@
 
                 <input type="submit" value="Send">
             </div>
+            
+<!--Days and Hours of operation are displayed in a table, that allows arrange data into rows and columns.-->
+            <div class="hours-of-operation">
+                <h2>Hours of Operation</h2>
+                    
+                <table>
+                    <tr>
+                        <th>Days</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Monday-Friday</td>
+                        <td>9 AM - 6 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
 
+<!--Emmbed a map using Google Map, pick the location, click embed map, copy the displayed HTML code and paste it here-->
             <div class="map">
                 <h2>Location</h2>
                 <a href="https://maps.google.com" target="_blank"></a>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778910497265!2d-75.754937!3d45.349928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1659368429919!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div class="hours-of-operation">
-                <h2>Hours of Operation</h2>
-                
-                <table>
-                    <tr>
-                      <th>Days</th>
-                      <th>Hours</th>
-                    </tr>
-                    <tr>
-                      <td>Monday-Friday</td>
-                      <td>9 AM - 6 PM</td>
-                    </tr>
-                    <tr>
-                      <td>Saturday - Sunday</td>
-                      <td>Closed</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </main>
+        </section>
 
-     <!--Creates "footer"-->
+<!--Creates "footer" section with copyright information and related link-->
     <footer>
-        <p>Copyright Three Star Media, 2020
-        All images are taken from <a href="https://www.unsplash.com">Unsplash</a></p>
+        <p>Copyright Three Star Media, 2020 <br> All images are taken from <a href="https://www.unsplash.com">Unsplash</a></p>
     </footer>
 </body>
 
