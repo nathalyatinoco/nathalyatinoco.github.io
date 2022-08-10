@@ -20,10 +20,13 @@
 </head>
 
 <body>
-<!--Creates the nav section using a unordered list-->
-    <div class="header">
-        <nav>
-            <div class="topnav">
+
+  <header>
+      <!--Creates a class= "wrapper" to center the content-->
+        <div class="wrapper">
+
+            <!--Creates a logo image and the nav section using a unordered list-->
+            <nav>
                 <img src="images/logo.png" alt="logo"/>
                     <ul>
                         <li><a class="active" href="#">Home</a></li>
@@ -32,163 +35,241 @@
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                <!--Creates the search container usingn a form-->
-                <div class="search-container">
+
+                <!--Creates the search container usingn a form and submit button with icon from Fontawesome-->
                     <form action="/action_page.php">
                         <input type="text" placeholder="=Search" name="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
-                </div>
-            </div>
-        </nav>
-
-<!--Creates the welcome banner with link buttom-->
-        <div class="intro-banner">
-            <div class="intro-text">
-                <h1>Welcome to Three Star Media</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quos facilis reiciendis voluptas error numquam doloribus nobis neque.</p>
-                    <!--Connect to a link-->
-                    <a href="" class="boton">Connect with us</a><i class="fa-solid fa-caret-right"></i>
-            </div>
+            </nav>
         </div>
-    </div>
+    </header>
 
 
     <main>
-<!--Creates "About Us" section, attaching an image, a heading, and two paragraphs-->
-        <section class="about-us">
+        <!--Creates a class= "wrapper" to center the content and not affect the background of the web-->
+        <div class="wrapper">
+
+            <!--Creates the welcome banner with link buttom-->
+            <div id="banner">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quos facilis reiciendis voluptas error numquam doloribus nobis neque.</p>
+                <!--Connect to a link ussing a icon from Fontawesome-->
+                <a href="" class="button">Connect with us</a><i class="fa-solid fa-caret-right"></i>
+            </div>
+        </div>
+    </main>
+
+
+    <!--Creates a class= "wrapper" to only center and modify this content-->
+    <section id="about">
+        
+        <div class="wrapper">
+            <!--Creates "About Us" section, attaching an image, a heading, and two paragraphs-->
             <img id="about-us" src="images/about-us.jpg" alt="About Us">
             <h2>About Us</h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus, ex ut doloremque atque nostrum ullam quidem iusto sapiente vitae ab dolore! <br> <!--The Line Break element allows to separe the paragraphs-->Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum eius eum quis, eveniet assumenda reiciendis inventore vero eligendi et aspernatur fugit, fugiat voluptas.
             </p>
-        </section>
+        </div>
+    </section>
 
-    
-<!--Creates "Our Services" section with multiples div inside with an image, a heading, a paragraph and a link to connect a page-->
-        <section class="our-services">
+
+    <section id="services">
+
+        <!--Creates a class= "wrapper" to only center and modify this content-->
+        <div class="wrapper">
             <h2>Our Services</h2>
-            <div class="digital-transformation">
-                <img id="digital-transformation" src="images/digital.jpg" alt="Digital Transformation">
-                <h3>Digital Transformation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
-                <a href="">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
-            </div>
             
-            <div class="marketing">
-                <img id="marketing" src="images/marketing.jpg" alt="Marketing">
-                <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
-                <a href="">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
-            </div>
+            <!--Creates "Our Services" class (parent) with multiples div inside (childs) that are all the services offered: with an image, a heading, a paragraph and a link to connect a page-->
+                <div class="services">
 
-            <div class="video">
-                <img id="video-production" src="images/video.jpg" alt="Video Production">
-                <h3>Video Production</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
-                <a href="">Video Plans <i class="fa-solid fa-caret-right"></i></a>
-            </div>
+                    <div class="multiple-services">
+                        <img id="digital-transformation" src="images/digital.jpg" alt="Digital Transformation">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
+                        <a href="" class="button-services">Digital Plans</a><i class="fa-solid fa-caret-right"></i>
+                    </div>
+           
+            
+         
+                    <div class="multiple-services">
+                        <img id="marketing" src="images/marketing.jpg" alt="Marketing">
+                        <h3>Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
+                        <a href="" class="button-services">Digital Plans</a><i class="fa-solid fa-caret-right"></i>
+                    </div>
+        
+                    
 
-            <div class="web">
-                <img id="web-development" src="images/web.jpg" alt="Web Development">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
-                <a href="">Web Plans <i class="fa-solid fa-caret-right"></i></a>
-            </div>
+            
+                    <div class="multiple-services">
+                        <img id="video-production" src="images/video.jpg" alt="Video Production">
+                        <h3>Video Production</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
+                        <a href="" class="button-services">Digital Plans</a><i class="fa-solid fa-caret-right"></i>
+                    </div>
+                
 
-            <div class="print">
-                <img id="print" src="images/print.jpg" alt="Print">
-                <h3>Print</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
-                <a href="">Print Plans <i class="fa-solid fa-caret-right"></i></a>
-            </div>
-        </section>
+                
+                    <div class="multiple-services">
+                        <img id="web-development" src="images/web.jpg" alt="Web Development">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
+                        <a href="" class="button-services">Digital Plans</a><i class="fa-solid fa-caret-right"></i>
+                    </div>
+            
 
-<!--Creates "Our vision" using a div to display a background image and a paragraph with a link buttom-->
-        <div class="our-vision">
-            <img id="our-vision" src="images/vision.jpg" alt="our-vision">
-                <h3>Our Vision</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
-                <a href="/">Learn More <i class="fa-solid fa-caret-right"></i></a>
+            
+                    <div class="multiple-services">
+                        <img id="print" src="images/print.jpg" alt="Print">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
+                        <a href="" class="button-services">Digital Plans</a><i class="fa-solid fa-caret-right"></i>
+                    </div>
+                
+                </div>
+
         </div>
 
-<!--Creates "Our Team" section with a class for each member with an image, two headings that defines the most important content, and a paragraph for the bio. -->
-        <section class="our-team">
+    </section>
+
+
+    <section id="our-vision">
+
+         <!--Creates a class= "wrapper" to only center and modify this content-->
+         <div class="wrapper">
+            <h2>Our Vision</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni consequatur officiis voluptates, quasi exercitationem excepturi ipsam possimus.</p>
+
+            <!--Connect to a link ussing a icon from Fontawesome-->
+            <a href="/" class="button">Learn More <i class="fa-solid fa-caret-right"></i></a>
+        </div>
+        
+    </section>
+
+
+    <section id="our-team">
+
+        <!--Creates a class= "wrapper" to only center and modify this content-->
+        <div class="wrapper">
             <h2>Our Team</h2>
-            <div class="john-doe">
-                <img id="john-doe" src="images/john.jpg" alt="John Doe">
-                <h3>John Doe</h3>
-                <h5>CEO and Co-owner</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore animi doloremque veritatis asperiores quae repellat nobis, sed voluptatum ab possimus placeat facere consequuntur, amet a nostrum ex explicabo, maxime magnam.</p>
-            </div>
 
-            <div class="bob-rite">
-                <img id="bob-rite" src="images/bob.jpg" alt="Bob Rite">
-                <h3>Bob Rite</h3>
-                <h5>CFO and Co-owner</h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore animi doloremque veritatis asperiores quae repellat nobis, sed voluptatum ab possimus placeat facere consequuntur, amet a nostrum ex explicabo, maxime magnam.
-                </p>
-            </div>
-        </section>
-    </main>
+                <!--Creates a "team-box" that contain a unique style only for this class-->
+                <div class="team-box">
 
-<!--Creates "Contact Us" section, using a form with three input fields and one submit button-->
-        <section class="contact-us">
+                    <!--Creates a "team-persona" that contain a unique style for the people who work on this team-->
+                    <div class="team-persona">
+                        <img id="john-doe" src="images/john.jpg" alt="John Doe">
+                        <h3>John Doe</h3>
+                        <h5>CEO and Co-owner</h5>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore animi doloremque veritatis asperiores quae repellat nobis, sed voluptatum ab possimus placeat facere consequuntur, amet a nostrum ex explicabo, maxime magnam.</p>
+                    </div>
+
+                    <div class="team-persona">
+                        <img id="bob-rite" src="images/bob.jpg" alt="Bob Rite">
+                        <h3>Bob Rite</h3>
+                        <h5>CFO and Co-owner</h5>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore animi doloremque veritatis asperiores quae repellat nobis, sed voluptatum ab possimus placeat facere consequuntur, amet a nostrum ex explicabo, maxime magnam.</p>
+                    </div>
+
+                </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact-us">
+
+        <!--Creates a class= "wrapper" to only center and modify this content-->
+        <div class="wrapper">
             <h2>Contact Us</h2>
-            <div class="send-us-a-message">
-                <h3>Send us a message</h3>
-         
-                <form action="Contact.html" method="post">
-                    <label for="fullname">Full Name</label>
-                    <input id="fullname" type="text">
-                </form>
+            <h3>Send us a message</h3>
 
-                <form action="Contact.html" method="post">
-                    <label for="email">Email</label>
-                    <input id="email" type="email">
-                </form>
+                <!--Creates "Contact Us" form with three input fields and one submit button-->
 
-                <form action="Contact.html" method="post">
-                    <label for="message">Message</label>
-                    <input id="message" type="text">
-                </form>
+                <div class="form">
+                    <form action="Contact.html" method="post">
+                        <label for="fullname">Full Name</label>
+                        <input id="fullname" type="text">
+                    </form>
 
-                <input type="submit" value="Send">
-            </div>
+                    <form action="Contact.html" method="post">
+                        <label for="email">Email</label>
+                        <input id="email" type="email">
+                    </form>
+
+                    <form action="Contact.html" method="post">
+                        <label for="message">Message</label>
+                        <input id="message" type="text">
+                    </form>
+
+                    <input type="submit" value="Send">
+                </div>
+                
+        </div>
+
+    </section>
+
+
+    <section id="hours-of-operation">
+
+        <!--Creates a class= "wrapper" to only center and modify this content-->
+        <div class="wrapper">
+            <h2>Hours of Operation</h2>
             
-<!--Days and Hours of operation are displayed in a table, that allows arrange data into rows and columns.-->
-            <div class="hours-of-operation">
-                <h2>Hours of Operation</h2>
-                    
+                <!--Days and Hours of operation are displayed in a table, that allows arrange data into rows and columns.-->
+           
                 <table>
                     <tr>
                         <th>Days</th>
                         <th>Hours</th>
                     </tr>
+
                     <tr>
                         <td>Monday-Friday</td>
                         <td>9 AM - 6 PM</td>
                     </tr>
+
                     <tr>
                         <td>Saturday - Sunday</td>
                         <td>Closed</td>
                     </tr>
+
                 </table>
-            </div>
+           
+        </div>
 
-<!--Emmbed a map using Google Map, pick the location, click embed map, copy the displayed HTML code and paste it here-->
-            <div class="map">
-                <h2>Location</h2>
-                <a href="https://maps.google.com" target="_blank"></a>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778910497265!2d-75.754937!3d45.349928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1659368429919!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+    </section>
 
-        </section>
 
-<!--Creates "footer" section with copyright information and related link-->
+    <section id="location">
+
+        <!--Creates a class= "wrapper" to only center and modify this content-->
+        <div class="wrapper">
+            <h2>Location</h2>
+            
+            <!--Emmbed a map using Google Map, pick the location, click embed map, copy the displayed HTML code and paste it here-->
+            
+            <a href="https://maps.google.com" target="_blank"></a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778910497265!2d-75.754937!3d45.349928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1659368429919!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+    </section>
+
     <footer>
-        <p>Copyright Three Star Media, 2020 <br> All images are taken from <a href="https://www.unsplash.com">Unsplash</a></p>
+        <!--Creates a class= "wrapper" to only center and modify this content-->
+        <div class="wrapper">
+
+            <!--Creates "footer" section with copyright information and related link-->
+            <p>©Copyright Three Star Media, 2020 <br> All images are taken from <a href="https://www.unsplash.com">Unsplash</a></p>
+        </div>
+
     </footer>
+
 </body>
 
 </html>
