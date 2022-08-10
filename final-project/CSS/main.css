@@ -64,44 +64,117 @@ body {
   margin: 0;
 }
 
-.wrapper {
+body .wrapper {
   padding: 1.5rem;
   margin: auto;
 }
 
 header {
-  background-color: black;
+  background-color: #222;
 }
 
 nav {
-  background-color: orange;
+  background-color: #c78c06;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+li {
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav ul li:nth-child(n+2), nav form{
-  background-color: black;
+  background-color: #222;
 }
 
-nav ul {
+nav ul li:nth-child(1) a{
+  color:#222;
+}
+
+nav ul li:nth-child(n+2) a{
+  color:#c78c06;
+}
+
+
+nav ul, nav form {
   text-align: center;
 }
 
-form input {
-  width: 85%;
+
+form {
+  display: flex;
 }
+
+nav form input {
+  width: 95%;
+  font-size: 11px;
+  border: 1px solid #c78c06;
+}
+
+form button {
+    font-size: 13px;
+    background-color: #222;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+}
+
+nav img {
+  width: 60px;
+  height: 60px;
+}
+
 
 <!------WELCOME SECTION------->
 
-.banner {
+main {
   background-image: url(../images/main-banner.jpg);
 }
 
 
-.banner h1 {
-  font-size: 62px;
-  color: black;
-
+main .wrapper {
+  color: white;
+  background-color: rgb(182, 180, 180);
+  margin-top: 50px;
 }
 
+div .banner {
+
+  margin: 5%;
+  font-weight: bold;
+}
+
+main .wrapper h1 {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+main .wrapper p {
+  margin-top: 30px;
+  font-size: 11px;
+}
+
+main .wrapper .button {
+  font-size: 11px;
+  color: #222;
+  background-color: #c78c06;
+  padding: 20px 10px;
+  text-decoration: none;
+  display:inline-block;
+  margin-top: 15px;
+}
+
+main .wrapper .fa-solid {
+  font-size: 11.8px;
+  color: #222;
+  background-color: #c78c06;
+  padding:19.74px 10px;
+  display:inline;
+  margin-top: 14px;
+}
 
 
 
