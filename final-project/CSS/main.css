@@ -271,16 +271,69 @@ padding: 15px;
 }
 
 
-.team-persona .john-bio {
+.team-persona .bio {
   background-color: rgb(243, 222, 182);
   margin-bottom: 20px;
+  padding: 15px;
 }
 
-.team-persona .bob-bio {
-  background-color: rgb(243, 222, 182);
-  margin-bottom: 20px;
+.team-persona h3 {
+  font-size: 25px;
+  font-weight: bold;
 }
 
+.team-persona h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.team-persona h5 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.team-persona p {
+  font-size: 11px;
+}
+
+.team-persona hr {
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid #c78c06;
+}
+
+#contact-us form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+#contact-us h2 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+#contact-us h3 {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+#contact-us input {
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+#contact-us input [type=submit] {
+  padding-bottom: 15px;
+  width: 30%;
+  background-color: #222;
+  color: #c78c06;
+}
 
 
 
