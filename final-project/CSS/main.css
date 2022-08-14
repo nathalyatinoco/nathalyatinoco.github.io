@@ -261,6 +261,36 @@ margin top: 10px;
 padding: 15px;
 }
 
+.team-box {
+  display: grid;
+}
+
+.team-persona img {
+  width: 100%;
+  height: auto;
+}
+
+
+.team-persona .john-bio {
+  background-color: rgb(243, 222, 182);
+  margin-bottom: 20px;
+}
+
+.team-persona .bob-bio {
+  background-color: rgb(243, 222, 182);
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+footer {
+  background-color:#222;
+  color: #c78c06;
+}
+
 
 @media screen and (min-width: 800px){
   .wrapper {
