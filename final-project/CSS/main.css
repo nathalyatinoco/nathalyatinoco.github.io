@@ -132,20 +132,21 @@ nav img {
 
 main {
   color: white;
-  margin-top: 0px;
-  background-size: 100%;
   padding: 20px 20px;
 }
 
 main .wrapper {
   background-image: url(../images/main-banner.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
   color: white;
 }
 
 <!------OPACITY BACKGROUND IS NOT WORKING ????------->
-.banner {
+#banner {
   background-color: rgba(0, 0, 0);
   opacity: 0.6;
+  width: 100%
   }
   
 
@@ -244,6 +245,21 @@ p {
 }
 
 
+#our-vision {
+  background-image: url(../images/vision.jpg);
+  background-size: 100% auto;
+  color: white;
+}
+
+.vision-button {
+font-size: 20px;
+background-color: black;
+opacity: 0.6;
+color: white;
+border: 1px solid #c78c06;
+margin top: 10px;
+padding: 15px;
+}
 
 
 @media screen and (min-width: 800px){
