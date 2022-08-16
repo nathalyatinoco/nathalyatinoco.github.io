@@ -51,8 +51,6 @@ table {
 
 ***************************************************
 
-<!------ADDING STYLE------->
-
 *,
 *:before,
 *:after {
@@ -65,6 +63,7 @@ body {
   padding: 0;
 }
 
+/*Defines margin and width*/
 body .wrapper {
   padding: 0.8rem;
   margin: auto;
@@ -74,6 +73,7 @@ header {
   background-color: #222;
 }
 
+/*Adding color and font style to the navigation bar */
 nav {
   background-color: #c78c06;
   font-weight: bold;
@@ -88,6 +88,7 @@ a {
   text-decoration: none;
 }
 
+/*Defines the first item in different color and the others in the same */
 nav ul li:nth-child(n+2), nav form{
   background-color: #222;
 }
@@ -105,11 +106,12 @@ nav ul, nav form {
   text-align: center;
 }
 
-
+/*Defines the align of the seachbar, in the same row as the other nav items */
 form {
   display: flex;
 }
 
+/*adding style to the form*/
 nav form input {
   width: 95%;
   font-size: 11px;
@@ -129,13 +131,8 @@ nav img {
 }
 
 
-<!------WELCOME SECTION------->
-
+/*Defines a background in the main section, with no repetition */
 main {
-  background-image: url(../images/main-banner.jpg);
-}
-
-main .wrapper {
   background-image: url(../images/main-banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -144,14 +141,15 @@ main .wrapper {
   padding-bottom: 50px;
 }
 
-<!------OPACITY BACKGROUND IS NOT WORKING ????------->
-#banner {
-  background-color: rgba(0, 0, 0, 0.6);
+/*Defines the transparency of background color */
+/*------OPACITY BACKGROUND IS NOT WORKING ???-----*/
+#main-banner {
+  background-color: rgba(0, 0, 0);
   opacity: 0.6;
   width: 100%
   }
   
-
+/*Adding style to the text content */
 main h1 {
   font-size: 55px;
   font-weight: bold;
@@ -165,6 +163,7 @@ main p {
   font-weight: bold;
 }
 
+/*adding color and measure to the link bottom */
 main .wrapper .button {
   font-size: 15px;
   color: #222;
@@ -176,6 +175,7 @@ main .wrapper .button {
   margin-top: 15px;
 }
 
+/*adding style to the icon */
 main .wrapper .fa-solid {
   font-size: 17px;
   font-weight: bold;
@@ -185,6 +185,7 @@ main .wrapper .fa-solid {
  
 }
 
+/*setting style with margin, color and weight font */
 #about {
   background-color: rgb(243, 222, 182);
   margin: auto;
@@ -202,11 +203,13 @@ p {
   line-height: 2;
 }
 
+/*width at 100% will be the same as the container in the web */
 #about img {
   width: 100%;
   height: auto;
 }
 
+/*adding style to the services */
 .multiple-services {
   margin-bottom: 20px;
   background-color: rgb(243, 222, 182);
@@ -264,7 +267,7 @@ background-color: black;
 opacity: 0.6;
 color: white;
 border: 1px solid #c78c06;
-margin top: 10px;
+margin-top: 10px;
 padding: 15px;
 }
 
@@ -279,15 +282,16 @@ padding: 15px;
 }
 
 
-.team-persona .bio {
+.team-persona .john-bio {
   background-color: rgb(243, 222, 182);
   margin-bottom: 20px;
   padding: 15px;
 }
 
-.team-persona h3 {
-  font-size: 25px;
-  font-weight: bold;
+.team-persona .bob-bio {
+  background-color: rgb(243, 222, 182);
+  margin-bottom: 20px;
+  padding: 15px;
 }
 
 .team-persona h3 {
@@ -422,26 +426,195 @@ footer p {
 }
 
 
-/*Media query for screen equal or above to 800px wide*/
+/*Responsive website: Adding media query for screen equal or above to 800px wide*/
 @media screen and (min-width: 800px){
 
-  /*Navigation section with the same spaces and links in one line*/
+  /*Navigation section with links in one line*/
  
   nav {
-    display: flex;
     justify-content:space-between;
     align-items: center;
+    display: flex;
     background-color: #222;
     padding: 20px;
   }
 
   nav ul {
     display: flex;
+    text-align: center;
   }
 
+   /*Adding style to the First link selected*/
   nav ul li:first-child {
     background-color: #c78c06;
     width: 70px;
     height: 15px;
   }
+
+  main .wrapper{
+    background-size: 100%;
+  }
+
+
+   /*Adding style to the font in heading and paragraph*/
+  main h1 {
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 1;
+    margin-left: 320px;
+  }
+  
+  main p {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 320px;
+  }
+
+  main .button {
+    margin-left: 320px;
+  }
+
+   /*Moving text content to align with the image*/
+  #about .wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 1200px;
+    margin-left: 320px;
+   
+  }
+
+  #about h2 {
+    display:inline;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+
+  #about p {
+    display: inline-block; 
+    width: 100%;
+    margin:0 auto;
+    zoom: 1; 
+    margin-top: 100px;
+    margin-left: -90px;
+  }
+
+/*Creating a grid template to align later the services*/
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  column-gap: 10px;
+  width: 1200px;
+  margin-left: 320px;
+}
+
+#services h2 {
+  margin-left: 320px;
+}
+
+ /*Moving services in the grid with 2rows and 6 columns*/
+.multiple-services:first-child {
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+}
+
+.multiple-services:nth-child(2) {
+  grid-row: 1 / 2;
+  grid-column: 4 / 7;
+}
+
+.multiple-services:nth-child(3) {
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+}
+
+.multiple-services:nth-child(4) {
+  grid-row: 2 / 3;
+  grid-column: 3 / 5;
+}
+
+.multiple-services:nth-child(5) {
+  grid-row: 2 / 3;
+  grid-column: 5 / 7;
+}
+
+ /*Moving adjusting image*/
+#our-vision {
+  background-position: 50%;
+}
+
+ /*Aligning margin*/
+#our-vision .wrapper {
+  margin-left: 320px;
+}
+
+#our-team .wrapper h2 {
+  margin-left: 320px;
+}
+
+/*Creating a grid template to align the members of the team*/
+.team-box {
+  grid-template-columns: 1fr 1fr;
+  margin-left: 320px;
+}
+
+/*Adjusting flex to move the content and images*/
+.team-persona {
+  display: flex;
+  justify-content: center;
+}
+
+.team-persona:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.team-persona .john-image {
+  width: 950px;
+  height: 200px;
+}
+
+
+
+
+
+
+
+
+
+/*Adjusting with float two sections side by side*/
+#contact-us {
+  margin-left: 320px;
+}
+
+#contact-us .form {
+  float:left;
+  width: 50%;
+  padding-bottom: 30px;
+}
+
+#contact-us .location {
+  float:right;
+  width: 50%;
+}
+
+#hours-of-operation{
+  width: 1200px;
+  margin-left: 320px;
+}
+
+#hours-of-operation h2{
+  width: 1200px;
+  margin-left: 0.5px;
+  float: left;
+}
+
+#location {
+  width: 50%;
+}
+
+footer p{
+  margin-left: 320px;
+}
+
 }
